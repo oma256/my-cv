@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <section class="section_left">
+            <center>
+                <img src="{{ url_for('static', filename='img/my_photo.png') }}" alt="my-photo">
+                <h1 class="title">Omurbek Dulatov</h1>
+            </center>
+            <hr>
+            <h5 class="sub-title">CONTACT INFO</h5>
+            <ul>
+                <li><i class="fa fa-phone"></i>+996 (708) 48-96-38</li>
+                <li><i class="fa fa-envelope"></i>oma.dulatov@gmail.com</li>
+                <li><i class="fa fa-globe"><b><a class="linkedin" href="https://www.linkedin.com/in/omurbek-dulatov-18057a259/">  LinkedIn</a></b></i></li>
+                <li><i class="fa fa-map-marker"></i>Kyrgyzstan, Bishkek</li>
+                <ul>
+                    <h5 class="sub-title">EDUCATION</h5>
+                    <em>Primary</em>
+                    <p>School name - 2022 to 2013</p>
+                    <em>College</em>
+                    <p>College name - 2013 to 2015</p>
+                    <em>Graduation</em>
+                    <p>Graduation name - 2015 to 2019</p>
+                    <h5 class="sub-title">LANGUAGE</h5>
+                    <label>English</label>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                    </div>
+                    <label>Russian</label>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <label>Kyrgyz</label>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </ul>
+            </ul>
+        </section>
+        <section class="section_right">
+            <h1 class="title">PROFILE</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+            <h1 class="title">EXPERIENCE</h1>
+            <h5 class="sub-title">Backend developer & DevOps</h5>
+            <p>Работаю в Бакай Банке с 2021 по текущий день...</p>
+            <em style="float:right;">2021-2024</em>
+            <h5 class="sub-title">Web developer & designer</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <em style="float:right;">Period Of Work</em>
+            <h5 class="sub-title">Web developer & designer</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <em style="float:right;">Period Of Work</em>
+            <h1 class="title">PROFESSIONAL SKILLS</h1>
+            <table>
+                <tr>
+                    <td>
+                        Python
+                    </td>
+                    <td>
+                        <div class="progress_container">
+                            <div class="progress_bar" style="width:100%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        HTML
+                    </td>
+                    <td>
+                        <div class="progress_container">
+                            <div class="progress_bar" style="width:10%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CSS
+                    </td>
+                    <td>
+                        <div class="progress_container">
+                            <div class="progress_bar" style="width:50%"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        JavaScript
+                    </td>
+                    <td>
+                        <div class="progress_container">
+                            <div class="progress_bar" style="width:80%"></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
