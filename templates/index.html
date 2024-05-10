@@ -16,13 +16,13 @@
         <section class="section_left">
             <center>
                 <img src="{{ url_for('static', filename='img/my_photo.png') }}" alt="my-photo">
-                <h1 class="title">{{ fullname }}</h1>
+                <h1 class="title">{{ contact_info.fullname }}</h1>
             </center>
             <hr>
             <h5 class="sub-title">CONTACT INFO</h5>
             <ul>
-                <li><i class="fa fa-phone"></i>+996 (708) 48-96-38</li>
-                <li><i class="fa fa-envelope"></i>oma.dulatov@gmail.com</li>
+                <li><i class="fa fa-phone"></i>+{{ contact_info.phone }}</li>
+                <li><i class="fa fa-envelope"></i>{{ contact_info.email }} </li>
                 <li><i class="fa fa-globe"><b><a class="linkedin" href="https://www.linkedin.com/in/omurbek-dulatov-18057a259/">  LinkedIn</a></b></i></li>
                 <li><i class="fa fa-map-marker"></i>Kyrgyzstan, Bishkek</li>
                 <ul>

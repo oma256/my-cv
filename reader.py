@@ -15,11 +15,23 @@ def get_contact_info():
             'location': row[4],
             'about_me': row[5]
         }
-        print(data)
+
         return data
 
 
 def get_education():
     worksheet = workbook['education']
-
+    edu_list = []
     for row in worksheet.iter_rows(min_row=2, values_only=True):
+        edu_list.append({'name': row[0], 'description': row[1]})
+
+    return edu_list
+
+
+def get_data():
+    data = {
+        'contact_info': get_contact_info(),
+        'education': get_education()
+    }
+
+    return data
